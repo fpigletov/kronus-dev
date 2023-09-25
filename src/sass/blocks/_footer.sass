@@ -1,0 +1,88 @@
+.footer
+  min-height: 415px
+  width: 100%
+  padding: 60px 0 40px 0    
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/footer/footer-bg.jpg') center/cover no-repeat
+  
+  @media (max-width: 480px)   
+    position: static
+    z-index: 0
+    overflow: hidden
+
+  &__container    
+
+  &__body
+
+
+  &__top
+
+
+  &__center
+    border-top: 1px solid var(--main-white)
+    border-bottom: 1px solid var(--main-white)
+    padding: 20px 0
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    gap: 30px
+    margin-bottom: 40px
+    @media (max-width: 480px)    
+      grid-template-columns: 1fr
+      gap: 20px
+
+
+  &__bottom
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    gap: 30px
+    @media (max-width: 480px)    
+      grid-template-columns: 1fr
+      gap: 20px
+
+.top-footer
+
+  &__logo
+    display: inline-flex
+    align-items: center
+    margin-bottom: 30px
+
+.center-footer
+
+  &__column
+    
+
+  &__title
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 15px
+
+  &__address    
+    margin-bottom: 15px
+
+  &__list
+
+  &__item
+    &:not(&:last-child)
+      margin-bottom: 10px
+
+  &__link
+    display: inline-flex
+    &::before
+      color: var(--plus-green)
+      padding-right: 10px
+      transition: padding 0.3s ease
+    @media (any-hover: hover)
+      &:hover
+        &::before
+          padding-right: 20px
+
+.bottom-footer
+
+    &__column
+
+
+    &__link      
+      color: var(--plus-green)
+      &::before      
+        background-color: var(--plus-green)
+
+

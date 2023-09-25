@@ -1,0 +1,179 @@
+.solutions
+    position: relative
+    background: url('../img/solutions/bg-solutions-1.jpg') left/cover no-repeat, url('../img/solutions/bg-solutions-2.jpg') right/cover no-repeat
+    background-size: 64.6% 100%, 35.4% 100%
+    min-height: 1016px
+    @media (max-width: 768px) 
+      background: none
+      background-color: var(--main-dark-blue)
+    @media (max-width: 480px) 
+      min-height: 789px
+
+    &__wrapper
+        // display: flex
+
+    &__actions
+        max-width: 501px
+        margin-right: 195px 
+        @media (max-width: 1200px)           
+          margin: 0 0 40px 0
+
+    &__slider
+        position: absolute
+        top: 150px
+        right: 0        
+        background: url('../img/solutions/pattern.png') right/cover no-repeat
+        background-size: 137px 100%
+        background-color: var(--main-violet)
+        padding: 150px 140px 150px 100px
+        width: 54.4%
+        @media (max-width: 1200px)  
+          position: static
+          width: 100%
+        @media (max-width: 992px)
+          padding: 70px 140px 70px 70px
+        @media (max-width: 768px) 
+          padding: 30px 
+          background: none
+          background-color: var(--main-violet)
+
+
+.actions-solutions
+
+    &__title
+        margin-bottom: 60px
+
+    &__pagination
+        display: flex
+        min-height: 480px
+        @media (max-width: 480px) 
+          display: none
+
+    &__progress
+        display: flex
+        flex-direction: column
+        margin-right: 20px
+
+    &__dot
+
+
+    &__btn
+        color: var(--plus-4-gray)
+        transition: color 0.3s ease 
+        &.is-active
+            color: var(--main-white) 
+
+.progress-actions
+
+    &__line
+        display: block
+        background-color: var(--plus-gray-text-6)
+        width: 8px
+        flex: 0 0 100%
+
+    &__bar
+        display: block
+        background-color: var(--main-white)
+        width: 100%
+        height: 0
+        transition: height 0.4s ease
+
+
+.btn-solutions        
+
+    &__name
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        font-size: 25px        
+        font-weight: 700
+        line-height: 130%
+
+    &__descr
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        font-size: 16px
+        font-weight: 400
+        line-height: 140%
+        letter-spacing: -0.16px
+
+
+.slider-solutions
+
+    &__wrapper
+
+
+    &__item
+        max-width: 765px
+
+    &__arrows
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 20px
+
+    &__arrow
+      svg
+        fill: var(--plus-green)
+
+      &_prev
+        svg
+          transform: rotate(-180deg)
+
+
+.item-solutions
+
+    &__tab-name 
+        display: block
+        color: var(--plus-3-gray)
+        letter-spacing: -0.16px
+        text-transform: uppercase
+        line-height: 140%
+        margin-bottom: 30px
+        @media (max-width: 768px) 
+          line-height: 100%
+          margin-bottom: 20px
+
+    &__title
+        font-size: 31px
+        font-weight: 700
+        line-height: 140%
+        letter-spacing: -0.62px
+        margin-bottom: 20px
+        @media (max-width: 768px) 
+          font-size: 26px
+          line-height: 120%
+
+    &__descr       
+        line-height: 110%
+        margin-bottom: 30px
+
+    &__btn       
+        padding: 15px 35px
+
+.splide__pagination
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-around
+    flex: 0 0 100%
+
+    li
+        position: relative
+
+        &::after
+            position: absolute
+            content: ''
+            bottom: -30px
+            left: -29px
+            width: 10px
+            height: 18px
+            background-color: var(--main-dark-blue)
+
+
+
+
+
+
+

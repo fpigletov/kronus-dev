@@ -1,0 +1,343 @@
+*
+  padding: 0
+  margin: 0
+  border: 0
+  cursor: none !important
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+a:focus,
+button:focus
+  outline: 2px solid var(--main-violet)
+
+a
+  color: inherit
+  outline: none
+
+aside,
+nav,
+footer,
+header,
+section
+  display: block
+
+html,
+body
+  height: 100%
+  min-width: var(--min-width)
+
+body
+  font-size: 16px
+  line-height: 1
+  font-family: var(--font-family)
+  color: var(--main-white)
+  font-weight: 400
+  font-style: normal
+
+input,
+button,
+textarea
+  font-size: inherit
+  font-family: var(--font-family)
+
+button
+  cursor: pointer
+  background-color: transparent
+
+a,
+a:visited
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: inherit
+  font-size: inherit
+
+.wrapper
+  width: 100%
+  min-height: 100%
+  overflow: hidden
+  display: flex
+  flex-direction: column
+
+.main
+  flex: 1 1 auto	  
+
+  &__home
+    padding: 120px 0 80px 0
+    @media (max-width: 480px)  
+      padding: 100px 0 40px 0  
+
+  &__benefits,
+  &__contact-us,
+  &__expertise
+    padding: 140px 0
+    @media (max-width: 992px)  
+      padding: 80px 0
+    @media (max-width: 480px) 
+      padding: 40px 0
+
+  &__automation
+    @media (max-width: 992px)  
+      padding: 80px 0 
+    @media (max-width: 480px) 
+      padding: 40px 0
+
+  &__solutions
+    padding: 150px 0 166px 0
+    @media (max-width: 992px)  
+      padding: 80px 0 
+    @media (max-width: 480px) 
+      padding: 40px 0
+
+  &__callback
+    
+
+.container
+  max-width: var(--max-width-container)
+  padding: 0 15px
+  margin: 0 auto
+  @media (max-width: var(--md3))
+    padding: 0 10px
+
+.title
+  font-size: 40px	
+  font-weight: 700
+  line-height: 130%
+  letter-spacing: -0.8px
+  text-transform: uppercase
+  color: var(--main-white)
+  @media (max-width: 768px) 
+    font-size: 32px	 
+  @media (max-width: 480px) 
+    font-size: 30px	 
+
+  &__color
+
+    &_purple
+      color: var(--plus-purple)
+
+    &_green
+      color: var(--plus-green)
+
+    &_white
+      color: var(--main-white)
+
+.btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  font-size: 16px	
+  color: var(--main-white)
+  letter-spacing: -0.16px
+  border-radius: 10px
+  padding: 10px 20px
+  background-color: var(--btn-green)	
+  border: 1px solid var(--btn-green)	
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease
+  @media(any-hover: hover)
+    &:hover
+      background-color: var(--main-white)
+      color: var(--main-violet)
+      border-color: var(--main-violet)
+
+.logo
+
+  &__img
+      flex: 0 0 45px
+      height: 45px
+      margin-right: 10px
+      img
+          width: 100%
+          height: 100%
+          object-fit: cover
+
+  &__text
+      span
+          display: block
+          &:first-child
+              font-size: 28px
+              font-weight: 700
+          &:last-child
+              font-size: 18px
+
+//Hidden
+.hidden
+  overflow: hidden
+
+.text
+  font-size: 20px
+  line-height: 140%
+  letter-spacing: -0.2px
+  @media (max-width: 480px), (max-height: 650px)
+    font-size: 16px
+    line-height: 120%
+
+.form-label
+  display: block  
+
+.form-input,
+.form-textarea
+  display: block
+  width: 100%
+  height: 100%
+  padding: 20px 30px
+  color: var(--plus-5-gray)
+  letter-spacing: -0.16px
+  outline: none
+  border: 2px solid var(--main-white)
+  transition: border-color 0.3s ease
+  &:focus
+    border-color: var(--main-violet)
+  &::placeholder
+    color: var(--plus-5-gray)
+    letter-spacing: -0.16px 
+  @media (max-width: 480px) 
+    padding: 10px
+
+.form-textarea
+  resize: none
+
+.checkbox
+  appearance: none
+  &:checked + .checkbox-tag::after
+    transform: scale(1)
+
+  &:focus-visible + .checkbox-tag
+    border-color: var(--main-violet)
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+.checkbox-tag
+  position: relative
+  display: inline-block
+  color: var(--main-dark-blue)
+  font-size: 14px
+  padding-left: 25px
+  padding-bottom: 5px
+  border-bottom: 2px solid transparent
+  transition: border-color 0.3s ease
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0    
+    width: 15px
+    height: 15px
+    border: 2px solid var(--main-violet)    
+  &::after
+    transition: all 0.3 ease 0s
+    position: absolute
+    content: ''
+    top: 3px
+    left: 3px
+    width: 9px
+    height: 9px
+    background-color: var(--main-violet)
+    transform: scale(0)
+
+.link-hover
+  position: relative  
+  &::before
+    content: ''
+    position: absolute
+    bottom: -3px
+    left: 0
+    width: 0
+    height: 2px    
+    transition: width 0.5s ease
+  @media (any-hover: hover)
+    &:hover
+      &::before
+        width: 100%
+	
+.mouse  
+  position: fixed
+  top: 0
+  left: 0  
+  width: 25px
+  height: 25px
+  border-radius: 100%
+  z-index: 10000000
+  pointer-events: none
+
+  &::before 
+    content: ""
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 25px
+    height: 25px
+    border-radius: 100%
+    background-color: var(--plus-green)
+    z-index: 2   
+    transition: opacity 0.3s ease
+
+  &::after 
+    content: ""
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 35px
+    height: 35px
+    border-radius: 100%
+    background-color: var(--btn-green)
+    transition: opacity 0.3s ease
+
+  &__view 
+    position: absolute
+    left: -100%
+    top: -100%    
+    z-index: 10
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    padding: 20px
+    width: 100px
+    height: 100px
+    border-radius: 100%
+    font-family: 'DrukCyr'    
+    font-size: 22px
+    font-weight: 500
+    z-index: 500
+    text-transform: uppercase
+    color: var(--main-dark-blue)
+    background-color: var(--btn-green)
+    transform: rotate(-45deg)
+    opacity: 0
+    transition: opacity 0.3s ease   
+
+.view-visible 
+  opacity: 1
+  transition: opacity 0.3s ease
+
+.links-visible::after 
+  border: 4px solid var(--plus-green)
+  transform: translate(-50%, -50%) scale(0.7)
+  background-color: transparent
+  transition: 0.3s
+
+.links-visible::before 
+  opacity: 0

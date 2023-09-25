@@ -1,0 +1,90 @@
+.home    
+    position: relative
+    background-color: var(--main-dark-blue)    
+    // background: url('../img/home/home-bg.jpg') center/cover no-repeat
+    // background: , linear-gradient(to right, #642b73, #c6426e)    
+    @media (any-hover: hover)      
+        height: 100vh
+
+    &__body
+        height: 100%
+        @media (any-hover: hover)
+            perspective: 1000px
+
+    &__layers
+        height: 100%
+        @media (any-hover: hover)
+            transform-style: preserve-3d
+            transform: rotateX(var(--move-y)) rotateY(var(--move-x))
+ 
+    &__layer
+
+        &_bg
+            position: absolute
+            background-position: center
+            background-repeat: no-repeat
+            background-size: cover
+            transform: translateZ(-60px)
+            inset: -10vw
+
+        &_title
+            margin-bottom: 90px 
+            transform: translateZ(350px)
+            @media (any-hover: hover)
+                transform: scale(0.9)
+            @media (max-height: 840px)   
+                margin-bottom: 60px         
+
+        &_element            
+            transform: translateZ(120px)
+            margin-bottom: 90px 
+            img
+              height: 100%
+              width: 100%
+              object-fit: cover
+            @media (any-hover: hover)
+                transform: scale(0.9)
+            @media (max-height: 840px)   
+                margin-bottom: 60px        
+            @media (max-height: 780px) and (any-hover: hover)
+                display: none
+
+        &_text  
+            display: flex
+            align-items: center 
+            transform: translateZ(150px)
+            @media (any-hover: hover)
+                transform: scale(0.9)             
+
+    &__title
+        max-width: 680px
+        font-size: 80px
+        font-weight: 700
+        line-height: 115%
+        text-transform: uppercase
+        @media (max-width: 768px)  
+            max-width: 600px
+            font-size: 54px 
+        @media (max-width: 480px)              
+            font-size: 42px 
+
+    &__text-element
+        flex: 0 0 47px
+        height: 110px
+        margin-right: 30px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover  
+        @media (max-width: 480px)    
+            height: 90px   
+
+
+    &__descr        
+        max-width: 510px
+        @media (max-width: 480px)
+            font-size: 14px
+
+
+
+
+

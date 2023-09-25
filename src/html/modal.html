@@ -1,0 +1,42 @@
+<div class="modal">
+  <div class="modal__body">
+    <div class="modal__left">
+      <div class="modal__top">
+        <button type="button" class="modal__close icon-close" aria-label="Close Modal Window"></button>
+      </div>
+      <form action="#" method="POST" class="modal__callback modal-block">
+        <div class="modal-block__body">
+          <h2 class="modal-block__title title">Do you have questions?</h2>
+          <p class="modal-block__subtitle text">Leave your number and we will call you back in 30 minutes</p>
+          <div class="modal-block__content">
+            <label class="modal-block__item form-label">
+              <input class="modal-block__input form-input" name="Name" placeholder="Name" type="text"
+                autocomplete="off">
+            </label>
+            <label class="modal-block__item form-label">
+              <input class="modal-block__input form-input" name="Phone" placeholder="Phone number" type="tel"
+                autocomplete="off">
+            </label>
+            <label class="modal-block__item form-label">
+              <input class="modal-block__input form-input" name="Email" placeholder="Email" type="email"
+                autocomplete="off">
+            </label>
+            <label class="modal-block__item form-label">
+              <input type="checkbox" class="modal-block__checkbox checkbox">
+              <span class="modal-block__checkbox-tag checkbox-tag">
+                I agree with <a target="_blank" href="#" class="modal-block__policy link-hover">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="modal-block__btn btn">Request a call</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal__right">
+      <picture>
+        <source srcset="img/modal/bg-vector.webp" type="image/webp">
+        <img loading="lazy" src="img/modal/bg-vector.png" alt="Modal Vector">
+      </picture>
+    </div>
+  </div>
+</div>
